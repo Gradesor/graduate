@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,CAAC,CAAC;EACD,UAAU,EAAE,UAAU;CAAG;;AAC1B,AAAA,GAAG,CAAC;EACH,SAAS,EAAE,IAAI;CAAG;;AACnB,AAAA,MAAM,AAAA,MAAM,CAAC;EACZ,OAAO,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_color.sass",
+        "../sass/_fonts.scss",
+        "../sass/_interface.sass",
+        "../sass/blocks/_nav.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
