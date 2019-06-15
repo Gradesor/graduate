@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+	<link href="css/style.css" rel="stylesheet">
 	<title>Дипломка</title>
 </head>
 <body>
@@ -12,58 +15,96 @@
 			<div class="nav-bar">
 				<div class="nav-item">
 					<div class="nav-item__icon"><img src="img/nav/icon.png" alt="Телефон"></div>
-					<span class="nav-item__phone"><br></span>
+					<div class="nav-item__phone">
+					 	<a href="tel:+79871880805">(987) 188 08 05</a>	
+						<a href="tel:+79683550505">(968) 355 05 05</a>
+					</div>
 					<button class="nav-item__btn">Перезвоните мне</button>
 				</div>
 				<div class="nav-item">
 					<div class="nav-item__logo"><img src="img/nav/logo.png" alt="Логотип"></div>
 				</div>
 				<div class="nav-item">
-					<div class="nav-item__cards">
-						<div class="nav-item__icon"><img src="img/nav/icon1.png" alt=""></div>
-						<span class="nav-item__text"></span>
+					<div class="nav-card">
+						<div class="nav-card__icon"><img src="img/nav/icon1.png" alt=""></div>
+						<span class="nav-card__text">Вход</span>
 					</div>
-					<div class="nav-item__cards">
-						<div class="nav-item__icon"><img src="img/nav/icon2.png" alt=""></div>
-						<span class="nav-item__text"></span>
+					<div class="nav-card">
+						<div class="nav-card__icon"><img src="img/nav/icon2.png" alt=""></div>
+						<span class="nav-card__text">Избранное</span>
 					</div>
-					<div class="nav-item__cards">
-						<div class="nav-item__icon"><img src="img/nav/icon3.png" alt=""></div>
-						<span class="nav-item__text"></span>
+					<div class="nav-card">
+						<div class="nav-card__icon"><img src="img/nav/icon3.png" alt=""></div>
+						<span class="nav-card__text">Корзина</span>
 					</div>
 				</div>
 			</div>
-			<div class="nav-menu">
-				<div class="nav-menu__left">
-					<div class="nav-menu__btn"></div>
-					<div class="nav-menu__clothes">
-						<span class="nav-menu__text">Одежда</span>
-						<div class="nav-menu__icon"><img src="img/nav/chev.png" alt=""></div>
-						<ul class="nav-list">
-							<li class="nav-list__item"></li>
-							<li class="nav-list__item"></li>
-							<li class="nav-list__item"></li>
-							<li class="nav-list__item"></li>
-							<li class="nav-list__item"></li>
-							<li class="nav-list__item"></li>
-							<li class="nav-list__item"></li>
-						</ul>
+		</div>
+		<div class="nav-menu">
+			<div class="container">
+				<div class="nav-menu__block">
+					<div class="nav-menu__left">
+						<a href="#" class="nav-menu__btn"><span></span></a>
+						<div class="nav-menu__item">
+							<span class="nav-menu__text">Одежда</span>
+							<div class="nav-menu__icon"><img src="img/nav/chev.png" alt=""></div>
+							<!-- <ul class="nav-list">
+								<li class="nav-list__item"></li>
+								<li class="nav-list__item"></li>
+								<li class="nav-list__item"></li>
+								<li class="nav-list__item"></li>
+								<li class="nav-list__item"></li>
+								<li class="nav-list__item"></li>
+								<li class="nav-list__item"></li>
+							</ul> -->
+						</div>
+						<div class="nav-menu__item">
+							<span class="nav-menu__text">Текстиль</span>
+							<div class="nav-menu__icon"><img src="img/nav/chev.png" alt=""></div>
+						</div>
+						<div class="nav-menu__item">
+							<span class="nav-menu__text">Школьная форма для девочек</span>
+							<div class="nav-menu__icon"><img src="img/nav/chev.png" alt=""></div>
+						</div>
 					</div>
-					<div class="nav-menu__textile">
-						<span class="nav-menu__text"></span>
-						<div class="nav-menu__icon"><img src="img/nav/chev.png" alt=""></div>
+					<div class="nav-menu__right">
+							<input type="text" class="nav-menu__input" placeholder="Что Вы хотите найти?">
+							<div class="nav-menu__img"><img src="img/nav/search.png" alt=""></div>
 					</div>
-					<div class="nav-menu__school">
-						<span class="nav-menu__text"></span>
-						<div class="nav-menu__icon"><img src="img/nav/chev.png" alt=""></div>
-					</div>
-				</div>
-				<div class="nav-menu__right">
-					<div class="nav-menu__input"></div>
-					<div class="nav-menu__img"><img src="img/nav/search.png" alt=""></div>
 				</div>
 			</div>
 		</div>
 	</nav>
+	<main>
+		<section class="popular">
+			<div class="container">
+				<div class="popular-block">
+					<div class="popular-item">
+						<div class="popular-item__left">
+							<img src="img/popular/child.jpg" alt="child">
+							<span class="popular__text">Caramell</span>
+						</div>
+						<div class="popular-down">
+							<div class="popular-down__img">
+								<img src="img/popular/bed.jpg" alt="bed">
+								<span class="popular__text">Постельное белье</span>
+							</div>
+							<div class="popular-down__img">
+								<img src="img/popular/crockery.jpg" alt="crockery">
+								<span class="popular__text">Детская посуда</span>
+							</div>
+						</div>
+					</div>
+					<div class="popular-right">
+						<img src="img/popular/mug.jpg" alt="mug">
+						<span class="popular__text">Корзины для игрушек</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

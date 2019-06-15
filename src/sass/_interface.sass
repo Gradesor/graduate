@@ -4,3 +4,31 @@ img
 	max-width: 100%
 button:focus
 	outline: none
+body
+	+reg
+.container
+	width: 1170px
+	max-width: 1170px
+	margin: 0 auto
+	width: 100%
+@media (min-width: 992px)
+	.nav
+		&-item__btn
+			&:hover
+				background-color: $main_color
+				color: #fff
+				cursor: pointer
+				transition: 0.2s
+		&-card
+			&:hover
+				background-color: lighten($main_color,30%)
+				color: #fff
+				cursor: pointer
+				transition: 0.2s
+		&-menu__item
+			&:hover
+				background-color: darken(desaturate($main_color, 3.62), 3.33)
+				cursor: pointer
+				transition: 0.2s
+		
+				
