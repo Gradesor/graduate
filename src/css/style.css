@@ -351,9 +351,9 @@ template {
 }
 
 @font-face {
-  font-family: 'Open Sans Bold';
-  src: url("../fonts/OpenSans/OpenSans-Bold.eot");
-  src: url("../fonts/OpenSans/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  font-family: 'Open Sans Semibold';
+  src: url("../fonts/OpenSans/OpenSans-SemiBold.eot");
+  src: url("../fonts/OpenSans/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -369,6 +369,10 @@ img {
 }
 
 button:focus {
+  outline: none;
+}
+
+input:focus {
   outline: none;
 }
 
@@ -438,17 +442,19 @@ body {
 
 .nav-card:nth-child(2) {
   margin-top: 5px;
-  margin-left: 36px;
-  margin-right: 33px;
+  margin-left: 35px;
+  margin-right: 34px;
 }
 
 .nav-card:nth-child(2) div {
-  margin-left: -1px;
+  margin-left: -2px;
+  margin-bottom: 4px;
 }
 
 .nav-card:nth-child(2) span {
-  margin-left: 1px;
-  letter-spacing: 0.2px;
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
+  letter-spacing: 0;
 }
 
 .nav-card:nth-child(3) div {
@@ -472,6 +478,7 @@ body {
 
 .nav-card__text {
   font-size: 12px;
+  font-family: 'Open Sans Semibold',	sans-serif;
 }
 
 .nav-item {
@@ -555,7 +562,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 39px;
+  margin-left: 38px;
 }
 
 .nav-menu {
@@ -607,6 +614,8 @@ body {
   cursor: pointer;
   position: relative;
   margin-right: 20px;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .nav-menu__btn span, .nav-menu__btn span:before, .nav-menu__btn span:after {
@@ -656,37 +665,47 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.3px;
   padding-top: 18px;
   padding-bottom: 28px;
+  font-family: 'Open Sans Semibold',	sans-serif;
 }
 
 .nav-menu__item:nth-child(2) {
+  letter-spacing: -1.01px;
   padding-left: 21px;
   padding-right: 22px;
 }
 
 .nav-menu__item:nth-child(3) {
   padding-left: 22px;
-  letter-spacing: 0.1px;
   padding-right: 22px;
 }
 
+.nav-menu__item:nth-child(3) span {
+  margin-right: 15px;
+}
+
 .nav-menu__item:nth-child(4) {
-  padding-left: 22px;
+  padding-left: 23px;
   padding-right: 22px;
+  letter-spacing: -0.57px;
+}
+
+.nav-menu__item:nth-child(4) span {
+  margin-right: 16px;
 }
 
 .nav-menu__text {
   font-size: 16px;
-  margin-right: 16px;
+  margin-right: 17px;
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
 }
 
 .nav-menu__icon {
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
 }
 
 .nav-menu__right {
@@ -705,9 +724,9 @@ body {
   width: 100%;
   height: 43px;
   font-size: 13px;
-  padding-top: 19px;
+  padding-top: 17px;
   padding-bottom: 17px;
-  padding-left: 22px;
+  padding-left: 21px;
   border-radius: 30px;
   border: none;
   margin-left: 2px;
@@ -725,6 +744,7 @@ body {
 }
 
 .popular__text {
+  font-family: 'Open Sans Semibold',	sans-serif;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -742,8 +762,8 @@ body {
           align-items: center;
   opacity: 0.8;
   font-size: 21px;
-  letter-spacing: 0.4px;
-  padding-bottom: 7px;
+  letter-spacing: 0;
+  padding-bottom: 5px;
 }
 
 .popular-down {
