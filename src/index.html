@@ -26,7 +26,11 @@
 				</div>
 				<div class="nav-item">
 					<div class="nav-card">
-						<div class="nav-card__icon"><img src="img/nav/icon1.png" alt=""></div>
+						<div class="nav-card__icon">
+							<object type="image/svg+xml" data="img/nav/icon1.svg">
+								<img src="img/nav/icon1.png">
+							</object>
+						</div>
 						<span class="nav-card__text">Вход</span>
 					</div>
 					<div class="nav-card">
@@ -34,7 +38,7 @@
 						<span class="nav-card__text">Избранное</span>
 					</div>
 					<div class="nav-card">
-						<div class="nav-card__icon"><img src="img/nav/icon3.png" alt=""></div>
+						<div class="nav-card__icon"><span class="nav-card__counter">4</span><img src="img/nav/icon3.png" alt=""></div>
 						<span class="nav-card__text">Корзина</span>
 					</div>
 				</div>
@@ -69,7 +73,7 @@
 					</div>
 					<div class="nav-menu__right">
 							<input type="text" class="nav-menu__input" placeholder="Что Вы хотите найти?">
-							<div class="nav-menu__img"><img src="img/nav/search.png" alt=""></div>
+							<div class="nav-menu__img"><i class="fas fa-search"></i></div>
 					</div>
 				</div>
 			</div>
@@ -115,7 +119,7 @@
 							<span class="sale-cards__subtitle">Артикул: 32 987</span>
 							<div class="sale-cards__buy">
 								<span class="sale-cards__price">Цена:<span class="boldR"> ₴ 1 870.00</span></span>
-								<a href="#" class="sale-cards__cart"><img src="img/sale/cart.png" alt="cart"></a>
+								<a href="#" class="sale-cards__cart"></a>
 							</div>
 						</div>
 						<div class="sale-cards__item">
@@ -125,7 +129,7 @@
 							<span class="sale-cards__subtitle">Артикул: 32 987</span>
 							<div class="sale-cards__buy">
 								<span class="sale-cards__price">Цена:<span class="boldR"> ₴ 840.00</span></span>
-								<a href="#" class="sale-cards__cart"><img src="img/sale/cart.png" alt="cart"></a>
+								<a href="#" class="sale-cards__cart"></a>
 							</div>
 						</div>
 						<div class="sale-cards__item">
@@ -136,7 +140,7 @@
 							<span class="sale-cards__subtitle">Артикул: 32 987</span>
 							<div class="sale-cards__buy">
 								<span class="sale-cards__price">Цена:<span class="boldR"> ₴ 549.00</span></span>
-								<a href="#" class="sale-cards__cart"><img src="img/sale/cart.png" alt="cart"></a>
+								<a href="#" class="sale-cards__cart"></a>
 							</div>
 						</div>
 						<div class="sale-cards__item">
@@ -146,14 +150,54 @@
 							<span class="sale-cards__subtitle">Артикул: 32 987</span>
 							<div class="sale-cards__buy">
 								<span class="sale-cards__price">Цена:<span class="boldR"> ₴ 1 890.00</span></span>
-								<a href="#" class="sale-cards__cart"><img src="img/sale/cart.png" alt="cart"></a>
+								<a href="#" class="sale-cards__cart"></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<section class="subscr">
+			<div class="container">
+				<div class="subscr__block">
+					<div class="subscr-text">
+						<h1 class="subscr-text__title">Подписывайтесь на наши новости</h1>
+						<h3 class="subscr-text__subtitle">и получите промо код на скидку</h3>
+					</div>
+					<form action="" class="subscr-form">
+						<input type="text" class="subscr-form__input" placeholder="Введите Ваш e-mail">
+						<button class="subscr-form__btn">Отправить</button>
+					</form>
+					<div class="subscr-lid">
+						<h3 class="subscr-lid__title">Следите за нами</h3>
+						<div class="subscr-lid__icon">
+							<a href="#" class="subscr-lid__img"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" class="subscr-lid__img"><i class="fab fa-vimeo-v"></i></a>
+							<a href="#" class="subscr-lid__img"><i class="fab fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
+	<div class="call">
+		<div class="container">
+			<div class="call__block">
+				<div class="call__close">
+					<i class="far fa-times-circle"></i>
+				</div>
+				<div class="call-text">
+					<h2 class="call-text__title">В скором времени наши работники свяжуться с вами</h2>
+					<span class="call-text__subtitle">Пожалуйста укажите свой номер</span>
+				</div>
+				<form action="#" class="call-form">
+					<input type="text" class="call-form__input" placeholder="Введите свой номер">
+					<button class="call-form__btn">Отправить номер</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://kit.fontawesome.com/f081f3fd9a.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 </body>

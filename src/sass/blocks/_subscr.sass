@@ -1,0 +1,85 @@
+.subscr
+	margin-top: 55px 
+	&__block
+		background-image: url(../img/subscription/bg.jpg) 
+		background-size: contain
+		width: 97.5%
+		text-align: center
+	&-text
+		text-align: center
+		&__title
+			+bold
+			display: inline-block
+			margin-left: 3px
+			font-size: 20px
+			margin-top: 40px
+			margin-bottom: 8px
+			position: relative
+			text-transform: uppercase
+			&:before
+				position: absolute
+				content: ''
+				bottom: -13px
+				left: 43%
+				width: 59px
+				height: 2px
+				background-color: $main_color
+		&__subtitle
+			font-size: 14px
+			text-transform: uppercase
+			margin-bottom: 21px
+			margin-left: 3px
+	&-form
+		margin-bottom: 28px
+		&__input
+			padding-top: 13px
+			padding-bottom: 14px
+			padding-left: 24px
+			font-size: 13px
+			border-radius: 30px
+			border: none
+			width: 100%
+			max-width: 297px
+			margin-right: 1px
+			letter-spacing: -0.2px
+		&__btn
+			transform: translateX(3px)
+			max-width: 122px
+			width: 100%
+			height: 40px
+			background-color: $main_color
+			font-size: 13px
+			+regRob
+			border-radius: 30px
+			border: none
+			color: #fff
+	&-lid
+		&__title
+			font-size: 14px
+			text-transform: uppercase
+			margin-left: 3px
+			margin-bottom: 7px
+		&__icon
+			display: flex
+			justify-content: center
+			align-items: center
+		&__img
+			margin-bottom: 41px
+			font-size: 10px
+			display: inline-block
+			margin-right: 8px
+			color: $main_color
+			padding: 5px 6px 3px 8px
+			border: 1.5px $main_color solid
+			border-radius: 6px
+			&:nth-child(3)
+				font-size: 27px
+				border: none
+				margin-right: 0
+				padding: 0
+			&:nth-child(2)
+				font-size: 14px
+				border: none
+				padding: 3px 5px 1px 4px
+				border: 1.5px $main_color solid
+				border-radius: 6px

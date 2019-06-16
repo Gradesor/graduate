@@ -16,25 +16,65 @@ body
 .boldR
 	+boldRob
 	font-size: 18px
-
+h1,h2,h3,h4
+	font-weight: normal
 @media (min-width: 992px)
 	.nav
-		&-item__btn
-			&:hover
-				background-color: $main_color
-				color: #fff
-				cursor: pointer
-				transition: 0.2s
+		&-item
+			&__btn
+				&:hover
+					background-color: $main_color
+					color: #fff
+					cursor: pointer
+					transition: 0.2s
+			&__phone
+				& a:hover:before
+					width: 100%
 		&-card
-			&:hover
-				background-color: lighten($main_color,30%)
-				color: #fff
-				cursor: pointer
+			&:hover:before
+				width: 100%
 				transition: 0.2s
+		&-menu
+			&__img:hover
+				transition: 0.2s
+				color: red
 		&-menu__item
 			&:hover
 				background-color: darken(desaturate($main_color, 3.62), 3.33)
 				cursor: pointer
 				transition: 0.2s
-		
+				transform: translateY(-2px)
+	.call
+		&-form
+			&__btn
+				&:hover
+					background-color: $main_color
+					color: #fff
+					transition: 0.2s
+		&__close
+			&:hover
+				color: red
+				transition: 0.2s
+	.popular
+		&-item
+			&__left:hover:before
+				transition: 0.2s
+				opacity: 0.5
+		&-down
+			&__img:hover:before
+				transition: 0.2s
+				opacity: 0.5
+		&-right:hover:before
+			transition: 0.2s
+			opacity: 0.5
+	.sale
+		&-cards
+			&__cart
+				&:hover
+					transition: 0.2s
+					background-color: #fff
+					border: 2px $main_color solid					
+					&:before
+						color: $main_color
+
 				

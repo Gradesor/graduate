@@ -9,6 +9,26 @@
 		justify-content: center
 		align-items: center
 		margin-top: 7px
+		position: relative
+		cursor: pointer
+		&:before
+			transition: 0.2s
+			position: absolute
+			content: ''
+			bottom: -10px
+			left: 0					
+			height: 4px
+			width: 0
+			background-color: $main_color
+		&__counter
+			position: absolute
+			padding: 6px 8px 6px 8px
+			background-color: $counter_color
+			top: -3px
+			right: 4px
+			border-radius: 50%
+			font-size: 11px
+			+bold
 		&:nth-child(2)
 			margin-top: 5px
 			margin-left: 35px
@@ -20,6 +40,7 @@
 				transform: translateX(2px)
 				letter-spacing: 0
 		&:nth-child(3)
+			position: relative				
 			& div
 				margin-left: -8px
 		&__icon
@@ -50,6 +71,18 @@
 			& a
 				color: #393939
 				text-decoration: none
+				display: inline-block
+				position: relative
+				&:before
+					transition: 0.2s
+					position: absolute
+					content: ''
+					bottom: 0
+					left: 0					
+					height: 4px
+					width: 0
+					background-color: $main_color
+
 		&__btn
 			padding-left: 6px
 			padding-bottom: 4px
@@ -170,6 +203,8 @@
 			letter-spacing: -0.2px
 		&__img
 			position: absolute
-			top: 33%
-			right: 48px
-
+			top: 23%
+			right: 49px
+			font-size: 18px
+			color: $main_color
+			cursor: pointer

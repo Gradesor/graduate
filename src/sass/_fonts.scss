@@ -39,6 +39,19 @@
 	font-style: normal;
 	font-display: swap;
 }
+@font-face {
+	font-family: 'cart';
+	src: url('../fonts/cart/icomoon.eot');
+	src: url('../fonts/cart/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/cart/icomoon.woff') format('woff'),
+		url('../fonts/cart/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@mixin cart {
+	font-family: 'cart';
+}
 @mixin reg {
 	font-family: 'Open Sans Regular',	sans-serif;
 }

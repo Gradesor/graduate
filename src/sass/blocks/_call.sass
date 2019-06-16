@@ -1,0 +1,70 @@
+.call
+	position: fixed
+	background-color: rgba(0,0,0,0.5)
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	display: none
+	justify-content: center
+	align-items: center
+	&_active
+		display: flex
+	&__block
+		background-color: #fff
+		text-align: center
+		position: relative
+	&__close
+		position: absolute
+		top: 5px
+		right: 5px
+		font-size: 30px
+		color: $main_color
+		cursor: pointer
+	&-text
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: center
+		&__title
+			font-size: 25px
+			+bold
+			margin-top: 50px
+			display: inline-block
+			margin-bottom: 50px
+		&__subtitle
+			font-size: 15px
+			margin-bottom: 200px
+			position: relative
+			&:before
+				position: absolute
+				content: ''
+				top: 50px
+				left: 0
+				width: 100%
+				background-color: $main_color
+				height: 2px
+	&-form
+		display: flex
+		justify-content: center	
+		
+		&__input
+			flex-basis: 50%
+			max-width: 20%
+			padding-top: 20px
+			padding-bottom: 20px
+			padding-left: 20px
+			margin-right: 50px
+			border-radius: 30px
+			font-size: 15px
+			border: 2px red solid
+			margin-bottom: 50px
+		&__btn
+			margin-bottom: 50px
+			flex-basis: 50%
+			max-width: 20%
+			font-size: 15px
+			border-radius: 30px
+			border: 2px $main_color solid
+			background-color: transparent
+			color: $main_color
