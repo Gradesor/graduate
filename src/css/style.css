@@ -359,6 +359,24 @@ template {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url("../fonts/Roboto/RobotoCondensed-Regular.eot");
+  src: url("../fonts/Roboto/RobotoCondensed-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/Roboto/RobotoCondensed-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url("../fonts/Roboto/RobotoCondensed-Bold.eot");
+  src: url("../fonts/Roboto/RobotoCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/RobotoCondensed-Bold.woff") format("woff"), url("../fonts/Roboto/RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -385,6 +403,11 @@ body {
   max-width: 1170px;
   margin: 0 auto;
   width: 100%;
+}
+
+.boldR {
+  font-family: 'Open Sans Semibold', sans-serif;
+  font-size: 18px;
 }
 
 @media (min-width: 992px) {
@@ -813,5 +836,215 @@ body {
 
 .popular-right span {
   padding-right: 4px;
+}
+
+.sale {
+  padding-top: 46px;
+}
+
+.sale__block {
+  text-align: center;
+}
+
+.sale__title {
+  display: inline-block;
+  margin: 0;
+  font-size: 26px;
+  font-family: 'Open Sans Semibold',	sans-serif;
+  -webkit-transform: translateX(-13px);
+          transform: translateX(-13px);
+  margin-bottom: 38px;
+}
+
+.sale-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 1px;
+}
+
+.sale-cards__item {
+  border: 1px solid #e8e8e8;
+  padding-top: 7px;
+  position: relative;
+  margin-right: 30px;
+  border-radius: 5px;
+  margin-top: 1px;
+  padding-bottom: 22px;
+}
+
+.sale-cards__item:nth-child(1) {
+  padding-left: 21px;
+  padding-right: 14px;
+}
+
+.sale-cards__item:nth-child(1) [class="sale-cards__cart"] {
+  margin-left: 38px;
+}
+
+.sale-cards__item:nth-child(2) {
+  padding-left: 20px;
+  padding-right: 21px;
+}
+
+.sale-cards__item:nth-child(2) [class="sale-cards__discount"] {
+  left: 17px;
+}
+
+.sale-cards__item:nth-child(2) [class="sale-cards__title"] {
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+}
+
+.sale-cards__item:nth-child(2) [class="sale-cards__subtitle"] {
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+}
+
+.sale-cards__item:nth-child(2) [class="sale-cards__price"] {
+  -webkit-transform: translateX(-1px);
+          transform: translateX(-1px);
+}
+
+.sale-cards__item:nth-child(2) [class="sale-cards__cart"] {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+.sale-cards__item:nth-child(3) {
+  padding-left: 8px;
+  padding-right: 7px;
+}
+
+.sale-cards__item:nth-child(3) [class="sale-cards__title"] {
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+}
+
+.sale-cards__item:nth-child(3) [class="sale-cards__subtitle"] {
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+}
+
+.sale-cards__item:nth-child(3) [class="sale-cards__price"] {
+  -webkit-transform: translateX(12px);
+          transform: translateX(12px);
+}
+
+.sale-cards__item:nth-child(3) [class="sale-cards__cart"] {
+  -webkit-transform: translateX(-9px);
+          transform: translateX(-9px);
+}
+
+.sale-cards__item:nth-child(4) {
+  padding-left: 26px;
+  padding-right: 24px;
+}
+
+.sale-cards__item:nth-child(4) [class="sale-cards__discount"] {
+  left: 18px;
+}
+
+.sale-cards__item:nth-child(4) [class="sale-cards__title"] {
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+}
+
+.sale-cards__item:nth-child(4) [class="sale-cards__subtitle"] {
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+}
+
+.sale-cards__item:nth-child(4) [class="sale-cards__price"] {
+  -webkit-transform: translateX(-7px);
+          transform: translateX(-7px);
+}
+
+.sale-cards__item:nth-child(4) [class="sale-cards__cart"] {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.sale-cards__discount {
+  position: absolute;
+  background-color: #88b14b;
+  top: 19px;
+  left: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 8px 7px 9px;
+  border-radius: 50%;
+}
+
+.sale-cards__new {
+  font-family: 'Open Sans Semibold',	sans-serif;
+  position: absolute;
+  background-color: #fff8c7;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #da7566;
+  top: 62px;
+  left: 17px;
+  padding: 18px 9px 17px 10px;
+  border-radius: 50%;
+}
+
+.sale-cards__title {
+  font-family: 'Open Sans Semibold',	sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 19px;
+  margin-left: -6px;
+  margin-bottom: 8px;
+}
+
+.sale-cards__subtitle {
+  font-size: 13px;
+  color: #666666;
+  margin-bottom: 17px;
+  margin-left: -6px;
+  display: block;
+}
+
+.sale-cards__buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sale-cards__cart {
+  -webkit-transform: translateX(-2px);
+          transform: translateX(-2px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 57px;
+  height: 37px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00B5EE;
+  text-align: center;
+  border-radius: 30px;
 }
 /*# sourceMappingURL=style.css.map */

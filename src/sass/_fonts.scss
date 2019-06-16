@@ -18,9 +18,37 @@
 	font-style: normal;
 	font-display: swap;
 }
+@font-face {
+	font-family: 'Roboto Regular';
+	src: url('../fonts/Roboto/RobotoCondensed-Regular.eot');
+	src: url('../fonts/Roboto/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto/RobotoCondensed-Regular.woff') format('woff'),
+		url('../fonts/Roboto/RobotoCondensed-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Bold';
+	src: url('../fonts/Roboto/RobotoCondensed-Bold.eot');
+	src: url('../fonts/Roboto/RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto/RobotoCondensed-Bold.woff') format('woff'),
+		url('../fonts/Roboto/RobotoCondensed-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
 @mixin reg {
 	font-family: 'Open Sans Regular',	sans-serif;
 }
 @mixin bold {
 	font-family: 'Open Sans Semibold',	sans-serif;
+}
+@mixin regRob {
+	font-family: 'Open Sans Regular', sans-serif;
+}
+
+@mixin boldRob {
+	font-family: 'Open Sans Semibold', sans-serif;
 }
