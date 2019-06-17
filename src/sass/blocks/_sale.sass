@@ -13,57 +13,62 @@
 		display: flex
 		justify-content: flex-start
 		margin-left: 1px
-		&__item
+		&__item 
 			cursor: pointer
 			border: 1px solid $border_color
 			padding-top: 7px
 			position: relative
-			margin-right: 30px
 			border-radius: 5px
 			margin-top: 1px
 			padding-bottom: 22px
+			background-color: #fff
+		& [class="card__item"]
 			&:nth-child(1)
-				padding-left: 21px
-				padding-right: 14px
-				& [class="sale-cards__cart"]
-					margin-left: 38px
+				& [class="sale-cards__item card"]
+					padding-left: 21px
+					padding-right: 14px
+					& [class="sale-cards__cart"]
+						margin-left: 37px
 			&:nth-child(2)
-				padding-left: 20px
-				padding-right: 21px
-				& [class="sale-cards__discount"]
-					left: 17px
-				& [class="sale-cards__title"]
-					transform: translateX(3px)
-				& [class="sale-cards__subtitle"]
-					transform: translateX(3px)
-				& [class="sale-cards__price"]
-					transform: translateX(-1px)
-				& [class="sale-cards__cart"]
-					transform: translateX(5px)
+				& [class="sale-cards__item card"]
+					padding-left: 20px
+					padding-right: 21px
+					& [class="sale-cards__discount"]
+						left: 17px
+					& [class="sale-cards__title"]
+						transform: translateX(3px)
+					& [class="sale-cards__subtitle"]
+						transform: translateX(3px)
+					& [class="sale-cards__price"]
+						transform: translateX(-1px)
+					& [class="sale-cards__cart"]
+						transform: translateX(5px)
 			&:nth-child(3)
-				padding-left: 8px
-				padding-right: 7px
-				& [class="sale-cards__title"]
-					transform: translateX(3px)
-				& [class="sale-cards__subtitle"]
-					transform: translateX(3px)
-				& [class="sale-cards__price"]
-					transform: translateX(12px)
-				& [class="sale-cards__cart"]
-					transform: translateX(-9px)
+				& [class="sale-cards__item card"]
+					padding-left: 8px
+					padding-right: 7px
+					& [class="sale-cards__title"]
+						transform: translateX(3px)
+					& [class="sale-cards__subtitle"]
+						transform: translateX(3px)
+					& [class="sale-cards__price"]
+						transform: translateX(12px)
+					& [class="sale-cards__cart"]
+						transform: translateX(-9px)
 			&:nth-child(4)
-				padding-left: 26px
-				padding-right: 24px
-				& [class="sale-cards__discount"]
-					left: 18px
-				& [class="sale-cards__title"]
-					transform: translateX(3px)
-				& [class="sale-cards__subtitle"]
-					transform: translateX(3px)
-				& [class="sale-cards__price"]
-					transform: translateX(-7px)
-				& [class="sale-cards__cart"] 
-					transform: translateX(10px)
+				& [class="sale-cards__item card"]					
+					padding-left: 25px
+					padding-right: 24px
+					& [class="sale-cards__discount"]
+						left: 18px
+					& [class="sale-cards__title"]
+						transform: translateX(2px)
+					& [class="sale-cards__subtitle"]
+						transform: translateX(2px)
+					& [class="sale-cards__price"]
+						transform: translateX(-7px)
+					& [class="sale-cards__cart"] 
+						transform: translateX(10px)
 		&__discount
 			position: absolute
 			background-color: $discount_color

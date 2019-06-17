@@ -1,0 +1,133 @@
+.new
+	padding-top: 48px
+	&-text
+		display: flex
+		justify-content: center
+		&__title
+			display: inline-block
+			transform: translateX(-13px)
+			font-size: 26px
+			+bold
+			margin-top: 0
+			margin-bottom: 40px
+	&-cards
+		&__item
+			display: flex
+			justify-content: flex-start
+			margin-left: 1px
+			&:nth-child(1)
+				margin-bottom: 21px
+				& [class="card__item"]
+					&:nth-child(1)
+						[class="new-item card"]
+							padding-left: 11px
+							padding-right: 7px
+					&:nth-child(2)
+						[class="new-item card"]
+							padding-left: 9px
+							padding-right: 9px
+							& [class="new-item__buy"]
+								width: 94%
+					&:nth-child(3)
+						[class="new-item card"]
+							padding-left: 26px
+							padding-right: 24px
+							& [class="new-item__buy"]
+								width: 108%
+								transform: translateX(-5px)
+					&:nth-child(4)
+						[class="new-item card"]
+							padding-left: 31px
+							padding-right: 24px
+							& h3,[class="new-item__subtitle"]
+								transform: translateX(-4px)
+							& [class="new-item__buy"]
+								width: 112%
+								transform: translateX(-13px)
+			&:nth-child(2)
+				& [class="card__item"]
+					width: 263px
+					&:nth-child(1)
+						[class="new-item card"]						
+							padding-left: 8px
+							& h3,[class="new-item__subtitle"]
+								transform: translateX(-3px)
+							& [class="new-item__buy"]
+								width: 90%
+								transform: translateX(13px)
+					&:nth-child(2)
+						[class="new-item card"]							
+							& [class="new-item__buy"]
+								width: 87%
+								transform: translateX(20px)
+					&:nth-child(3)
+						[class="new-item card"]
+							padding-left: 8px
+							& h3,[class="new-item__subtitle"]
+								transform: translateX(-3px)
+							& [class="new-item__buy"]
+								width: 90%
+								transform: translateX(12px)
+					&:nth-child(4)
+						[class="new-item card"]
+							width: 260px
+							& [class="new-item__buy"]
+								width: 88%
+								transform: translateX(19px)
+	&-item
+		cursor: pointer
+		border: 1px solid $border_color
+		padding-top: 7px
+		position: relative
+		border-radius: 5px
+		margin-top: 1px
+		padding-bottom: 22px
+		text-align: center
+		background-color: #fff
+		&__new
+			+bold
+			position: absolute
+			background-color: $new_color
+			text-transform: uppercase
+			font-size: 10px
+			color: $new_text
+			top: 15px 
+			left: 17px
+			padding: 18px 9px 17px 10px
+			border-radius: 50%
+		&__title
+			+bold
+			font-weight: normal
+			font-size: 16px			
+			margin-top: 18px
+			margin-bottom: 7px
+		&__subtitle
+			font-size: 13px
+			color: #666666
+			margin-bottom: 17px
+			display: block
+		&__buy
+			display: flex
+			justify-content: space-between
+			font-size: 15px
+			align-items: center
+			transform: translateX(10px)
+			width: 93%
+		&__cart
+			transform: translateX(-2px)
+			display: flex
+			width: 57px
+			height: 37px
+			justify-content: center
+			align-items: center
+			background-color: $main_color
+			text-align: center
+			border-radius: 30px
+			+cart
+			font-size: 18px
+			text-decoration: none
+			&:before
+				content: "\e900"
+				font-size: 20px
+				color: white
+

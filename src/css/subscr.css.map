@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,OAAO,CAAC;EACP,UAAU,EAAE,KAAK;CAEsC;;AADtD,AAAD,cAAQ,CAAC;EACR,gBAAgB,EAAE,+BAA+B;CAAG",
-    "sources": [
-        "../sass/blocks/subscr.sass"
-    ],
-    "names": [],
-    "file": "subscr.css"
-}
