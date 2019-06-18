@@ -26,7 +26,7 @@ h1,h2,h3,h4
 		&:nth-child(4)
 			margin-right: 0
 	&__box
-		flex-basis: 50%
+		width: 100%
 		display: none
 		justify-content: space-between
 		margin-bottom: 15px
@@ -122,8 +122,6 @@ h1,h2,h3,h4
 			z-index: 50
 			transition: 0.2s
 			box-shadow: 0 0 13px rgba(0, 0, 0, 0.12)
-			.card__item
-				z-index: 50
 			.card__box
 				display: flex
 			.card-lid
@@ -163,6 +161,9 @@ h1,h2,h3,h4
 			&:before
 				color: $main_color
 	.footer
+		&__link:hover
+			transition: 0.2s
+			color: #000
 		&-block
 			&__btn:hover
 				background-color: #fff
@@ -181,6 +182,9 @@ h1,h2,h3,h4
 				transition: 0.2s
 				border-color: $main_color
 				color: $main_color
+			&__like:hover:before
+				transition: 0.2s					
+				display: flex
 
 
 				

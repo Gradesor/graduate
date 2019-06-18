@@ -16,65 +16,52 @@
 			justify-content: flex-start
 			margin-left: 1px
 			&:nth-child(1)
-				margin-bottom: 21px
+				margin-bottom: 19px
 				& [class="card__item"]
-					&:nth-child(1)
-						[class="new-item card"]
-							padding-left: 11px
-							padding-right: 7px
-					&:nth-child(2)
-						[class="new-item card"]
-							padding-left: 9px
-							padding-right: 9px
-							& [class="new-item__buy"]
-								width: 94%
-					&:nth-child(3)
-						[class="new-item card"]
-							padding-left: 26px
-							padding-right: 24px
-							& [class="new-item__buy"]
-								width: 108%
-								transform: translateX(-5px)
-					&:nth-child(4)
-						[class="new-item card"]
-							padding-left: 31px
-							padding-right: 24px
-							& h3,[class="new-item__subtitle"]
-								transform: translateX(-4px)
-							& [class="new-item__buy"]
-								width: 112%
-								transform: translateX(-13px)
-			&:nth-child(2)
-				& [class="card__item"]
-					width: 263px
 					&:nth-child(1)
 						[class="new-item card"]						
-							padding-left: 8px
 							& h3,[class="new-item__subtitle"]
-								transform: translateX(-3px)
-							& [class="new-item__buy"]
-								width: 90%
-								transform: translateX(13px)
+								transform: translateX(1px)
 					&:nth-child(2)
 						[class="new-item card"]							
-							& [class="new-item__buy"]
-								width: 87%
-								transform: translateX(20px)
+							& [class="new-item__buy"]								
+								transform: translateX(3px)
+					&:nth-child(3)
+						[class="new-item card"]							
+							& [class="new-item__buy"]								
+								transform: translateX(3px)
+					&:nth-child(4)
+						[class="new-item card"]	
+							& [class="new-item__img"]
+								padding-left: 4px						
+							& [class="new-item__buy"]								
+								transform: translateX(2px)
+			&:nth-child(2)
+				& [class="card__item"]					
+					&:nth-child(1)
+						[class="new-item card"]						
+							& [class="new-item__img"]
+								padding-left: 8px
+							& h3,[class="new-item__subtitle"]
+								transform: translateX(1px)												
+					&:nth-child(2)
+						[class="new-item card"]							
+							& [class="new-item__buy"]								
+								transform: translateX(3px)
 					&:nth-child(3)
 						[class="new-item card"]
-							padding-left: 8px
-							& h3,[class="new-item__subtitle"]
-								transform: translateX(-3px)
-							& [class="new-item__buy"]
-								width: 90%
-								transform: translateX(12px)
+							& [class="new-item__img"]
+								padding-left: 8px							
+							& [class="new-item__buy"]								
+								transform: translateX(3px)
 					&:nth-child(4)
 						[class="new-item card"]
-							width: 260px
+							& [class="new-item__img"]
+								padding-right: 3px					
 							& [class="new-item__buy"]
-								width: 88%
-								transform: translateX(19px)
+								transform: translateX(3px)
 	&-item
+		width: 263px
 		cursor: pointer
 		border: 1px solid $border_color
 		padding-top: 7px
@@ -83,7 +70,16 @@
 		margin-top: 1px
 		padding-bottom: 22px
 		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
 		background-color: #fff
+		&__text
+			width: 88%
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
 		&__new
 			+bold
 			position: absolute
@@ -104,15 +100,15 @@
 		&__subtitle
 			font-size: 13px
 			color: #666666
-			margin-bottom: 17px
+			margin-bottom: 19px
 			display: block
 		&__buy
 			display: flex
 			justify-content: space-between
 			font-size: 15px
 			align-items: center
-			transform: translateX(10px)
-			width: 93%
+			transform: translateX(4px)
+			width: 99%
 		&__cart
 			transform: translateX(-2px)
 			display: flex
