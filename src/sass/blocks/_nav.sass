@@ -115,6 +115,7 @@
 		justify-content: center
 		align-items: center
 		color: #fff
+		position: relative
 		&__left
 			display: flex
 			justify-content: flex-start
@@ -160,8 +161,10 @@
 			justify-content: flex-start			
 			letter-spacing: -0.3px
 			padding-top: 18px
-			padding-bottom: 28px
-			+bold			
+			padding-bottom: 28px			
+			+bold
+			&_active
+				background-color: darken(desaturate($main_color, 3.62), 3.33) 
 			&:nth-child(2)
 				letter-spacing: -1.01px
 				padding-left: 21px
@@ -208,3 +211,50 @@
 			font-size: 18px
 			color: $main_color
 			cursor: pointer
+	&-popup
+		position: absolute
+		width: 100%
+		height: 479px
+		box-shadow: 0 5px 16px rgba(0, 0, 0, 0.15)
+		background-color: #ffffff
+		display: none
+		z-index: 5
+		&_active
+			transition: 0.2s 
+			display: block
+		&__block
+			display: block
+			justify-content: flex-start
+			&_active
+				display: flex
+	&-list
+		list-style-type: none
+		margin-top: 0
+		margin-right: -8px
+		display: none
+		&:nth-child(2)
+			margin-right: -5px
+		&:nth-child(3)
+			margin-right: 0
+		&__item
+			cursor: pointer
+			padding-left: 23px
+			font-size: 15px
+			+bold
+			color: $popup_text
+			height: 51px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			border-bottom: 1px solid $popup_color
+			margin-bottom: -3px
+			width: 299px
+			&_active
+				background-color: $popup_color
+		&_active
+			display: block
+		&__link
+			text-decoration: none
+			color: $popup_text
+		&__img
+			margin-right: 15px

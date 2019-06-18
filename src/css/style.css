@@ -512,6 +512,11 @@ h1, h2, h3, h4 {
 }
 
 @media (min-width: 992px) {
+  .nav-list__item:hover {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    background-color: #e0f7fa;
+  }
   .nav-item__btn:hover {
     background-color: #00B5EE;
     color: #fff;
@@ -875,6 +880,7 @@ h1, h2, h3, h4 {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
+  position: relative;
 }
 
 .nav-menu__left {
@@ -967,6 +973,10 @@ h1, h2, h3, h4 {
   font-family: 'Open Sans Semibold',	sans-serif;
 }
 
+.nav-menu__item_active {
+  background-color: #04a6d9;
+}
+
 .nav-menu__item:nth-child(2) {
   letter-spacing: -1.01px;
   padding-left: 21px;
@@ -1036,6 +1046,85 @@ h1, h2, h3, h4 {
   font-size: 18px;
   color: #00B5EE;
   cursor: pointer;
+}
+
+.nav-popup {
+  position: absolute;
+  width: 100%;
+  height: 479px;
+  -webkit-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 16px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  display: none;
+  z-index: 5;
+}
+
+.nav-popup_active {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  display: block;
+}
+
+.nav-popup__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin-top: 0;
+  margin-right: -8px;
+  display: none;
+}
+
+.nav-list:nth-child(2) {
+  margin-right: -5px;
+}
+
+.nav-list:nth-child(3) {
+  margin-right: 0;
+}
+
+.nav-list__item {
+  cursor: pointer;
+  padding-left: 23px;
+  font-size: 15px;
+  font-family: 'Open Sans Semibold',	sans-serif;
+  color: #242021;
+  height: 51px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #e0f7fa;
+  margin-bottom: -3px;
+  width: 299px;
+}
+
+.nav-list__item_active {
+  background-color: #e0f7fa;
+}
+
+.nav-list_active {
+  display: block;
+}
+
+.nav-list__link {
+  text-decoration: none;
+  color: #242021;
+}
+
+.nav-list__img {
+  margin-right: 15px;
 }
 
 .popular {
@@ -1505,6 +1594,10 @@ h1, h2, h3, h4 {
   max-width: 297px;
   margin-right: 1px;
   letter-spacing: -0.2px;
+}
+
+.subscr-form__input:focus {
+  border: 1px solid #00B5EE;
 }
 
 .subscr-form__btn {
