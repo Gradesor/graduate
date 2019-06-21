@@ -38,11 +38,46 @@ $(document).ready(function () {
 				$('#block3').removeClass('nav-popup__block_active');
 				$('#list1').toggleClass('nav-list_active');
 				$('#list2').removeClass('nav-list_active');
+				$('#list3').removeClass('nav-list_active');				
+			})
+			$('#textile').on('click', function () {
+				if ($('#menu1').hasClass('nav-popup_active') == false) {
+					$('#menu1').toggleClass('nav-popup_active');
+				}
+				if ($('#textile').hasClass('nav-menu__item_active') == true) {
+					$('#menu1').toggleClass('nav-popup_active');
+				}
+				$('#clothes').removeClass('nav-menu__item_active');
+				$('#textile').toggleClass('nav-menu__item_active');
+				$('#school').removeClass('nav-menu__item_active');
+				$('#list1').removeClass('nav-list_active');
+				$('#list2').toggleClass('nav-list_active');
 				$('#list3').removeClass('nav-list_active');
+				$('#block1').removeClass('nav-popup__block_active');
+				$('#block2').toggleClass('nav-popup__block_active');
+				$('#block3').removeClass('nav-popup__block_active');
 			})
 
+			$('#school').on('click', function () {
+				if ($('#menu1').hasClass('nav-popup_active') == false) {
+					$('#menu1').toggleClass('nav-popup_active');
+				}
+				if ($('#school').hasClass('nav-menu__item_active') == true) {
+					$('#menu1').toggleClass('nav-popup_active');
+				}
+				$('#clothes').removeClass('nav-menu__item_active');
+				$('#textile').removeClass('nav-menu__item_active');
+				$('#school').toggleClass('nav-menu__item_active');
+				$('#list1').removeClass('nav-list_active');
+				$('#list2').removeClass('nav-list_active');
+				$('#list3').toggleClass('nav-list_active');
+				$('#block1').removeClass('nav-popup__block_active');
+				$('#block2').removeClass('nav-popup__block_active');
+				$('#block3').toggleClass('nav-popup__block_active');
+			})
 			$('#item1_1_1').mouseenter(function () {
 				$('#list1_1').addClass('nav-list_active');
+				console.log('as')
 				$('#item1_1_1').css('bacground', '#00B5EE')
 				$('#item1_1_2').css('bacground', 'none')
 				$('#item1_1_3').css('bacground', 'none')
