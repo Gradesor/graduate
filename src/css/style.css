@@ -1446,7 +1446,9 @@ h1, h2, h3, h4 {
 .nav-popup_active {
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav-popup__block {
@@ -1466,6 +1468,10 @@ h1, h2, h3, h4 {
   list-style-type: none;
   margin-top: 0;
   margin-right: -8px;
+  display: none;
+}
+
+.nav-list_mob {
   display: none;
 }
 
@@ -1507,12 +1513,86 @@ h1, h2, h3, h4 {
 }
 
 .nav-list__link {
+  font-family: 'Open Sans Semibold',	sans-serif;
   text-decoration: none;
   color: #242021;
 }
 
 .nav-list__img {
   margin-right: 15px;
+}
+
+@media (max-width: 1120px) {
+  .nav-popup {
+    height: 0;
+  }
+  .nav-list_mob {
+    display: block;
+    padding-left: 0;
+    margin: 0;
+  }
+  .nav-list__link {
+    font-size: 15px;
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  .nav-list__box {
+    padding-left: 76px;
+    padding-right: 80px;
+  }
+  .nav-list__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 49px;
+    border-bottom: 1px solid #00B5EE;
+  }
+  .nav-list__item {
+    display: contents;
+  }
+  .nav-popup_active {
+    display: block;
+  }
+  #Mlist1 {
+    padding-left: 20px;
+  }
+  #Mlist1 [class="nav-list__box"] {
+    padding-left: 56px;
+  }
+  #Mlist1 [class="nav-list__box"] [class="nav-list__wrap"] {
+    padding-left: 20px;
+  }
+  #item1_1_4 .nav-list__link {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+  #item1_1_5 .nav-list__link {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  #item1_1_6 .nav-list__link {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  #item1_1_7 .nav-list__link {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  #Mtextile .nav-list__link {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+  #Mschool .nav-list__link {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
 }
 
 @media (max-width: 920px) {
@@ -1617,6 +1697,98 @@ h1, h2, h3, h4 {
   .nav-menu__block {
     -webkit-transform: translateY(2px);
             transform: translateY(2px);
+  }
+  .nav-popup {
+    height: 0;
+  }
+  .nav-list_mob {
+    display: block;
+    padding-left: 0;
+    margin: 0;
+  }
+  .nav-list__img {
+    margin-right: 6px;
+  }
+  .nav-list__link {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  .nav-list__box {
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+  .nav-list__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 52px;
+    padding-right: 5px;
+    border-bottom: 1px solid #00B5EE;
+  }
+  .nav-list__item {
+    display: contents;
+  }
+  .nav-popup_active {
+    display: block;
+  }
+  #Mlist1 {
+    padding-left: 20px;
+  }
+  #Mlist1 [class="nav-list__box"] {
+    padding-left: 0;
+  }
+  #Mlist1 [class="nav-list__box"] [class="nav-list__wrap"] {
+    padding-left: 15px;
+  }
+  #item1_1_1 .nav-list__link {
+    -webkit-transform: translate(0, -1px);
+            transform: translate(0, -1px);
+  }
+  #item1_1_2 .nav-list__wrap {
+    height: 46px;
+  }
+  #item1_1_2 .nav-list__link {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+  #item1_1_3 .nav-list__wrap {
+    height: 46px;
+  }
+  #item1_1_4 .nav-list__link {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  #item1_1_5 .nav-list__link {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  #item1_1_5 .nav-list__wrap {
+    height: 46px;
+  }
+  #item1_1_6 .nav-list__link {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  #item1_1_6 .nav-list__wrap {
+    height: 49px;
+  }
+  #item1_1_7 .nav-list__link {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  #item1_1_7 .nav-list__wrap {
+    height: 49px;
+  }
+  #Mtextile .nav-list__link {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
   }
 }
 
