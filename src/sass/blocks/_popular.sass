@@ -21,6 +21,8 @@
 	&-block
 		display: flex
 		justify-content: flex-start
+		&__mob
+			display: none
 	&-item
 		&__left
 			margin-right: 15px
@@ -70,3 +72,42 @@
 			opacity: 0
 		& span			
 			padding-right: 4px
+@media (max-width: 751px)
+	.popular
+		padding-left: 0
+		&__text
+			font-size: 16px
+			height: 59px
+			bottom: 3px
+			padding-bottom: 0
+		&-block
+			&__img
+				position: relative				
+				&:nth-child(1)
+					margin-right: 14px									
+				&:nth-child(3)
+					margin-top: 11px
+					margin-right: 14px
+				&:nth-child(4)
+					margin-top: 11px
+			&__pc
+				display: none
+			&__mob
+				display: flex
+				justify-content: center
+				flex-wrap: wrap
+@media (max-width: 640px) and (min-width: 320px)
+	.popular
+		&-block
+			&__mob 
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
+			&__img
+				margin-bottom: 15px
+				margin-right: 14px
+				&:nth-child(3)
+					margin-top: -2px
+				&:nth-child(4)
+					margin-top: -2px

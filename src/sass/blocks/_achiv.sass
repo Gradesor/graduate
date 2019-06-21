@@ -7,21 +7,29 @@
 		padding-bottom: 35px
 		display: flex
 		justify-content: flex-start
+		flex-wrap: wrap		
 		&__item
 			display: flex
 			justify-content: flex-start
 			align-items: center
 			margin-right: 24px
+			&:nth-child(1)
+				order: 1
+			&:nth-child(2)
+				order: 2
 			&:nth-child(3)
+				order: 3
 				margin-right: 32px
 				& span
 					max-width: 164px
 			&:nth-child(4)
+				order: 4
 				margin-right: 41px
 				& span
 					max-width: 164px
 					margin-left: 0
 			&:last-child
+				order: 5
 				margin-right: 0
 				& span
 					max-width: 164px
@@ -38,3 +46,74 @@
 			line-height: 18px
 			max-width: 151px
 			width: 100%
+@media (max-width: 1200px)
+	.achiv
+		&__box
+			display: flex
+			justify-content: center
+		&-block			
+			max-width: 944px
+			&__item
+				margin-bottom: 24px
+@media (max-width: 960px)
+	.achiv
+		margin-top: 33px
+		&-block
+			padding-top: 22px
+			padding-bottom: 3px			
+			max-width: 597px
+			align-items: center
+			transform: translateX(-1px)
+			&__item
+				&:nth-child(1)
+					margin-right: 57px
+				&:nth-child(2)
+					transform: translateY(-3px)
+					margin-right: 57px
+					order: 3
+				&:nth-child(3)					
+					order: 5
+				&:nth-child(4)					
+					order: 2
+					transform: translateX(1px)
+					margin-right: 0
+					margin-bottom: 26px
+					& span
+						margin-left: 13px
+						max-width: 236px
+					& div
+						transform: translateY(-3px)
+				&:nth-child(5)
+					order: 4
+					& span
+						max-width: 224px
+						margin-left: 15px
+			&__text
+				max-width: 201px
+				margin-left: 13px
+@media (max-width: 640px) and (min-width: 320px)
+	.achiv
+		margin-top: 31px
+		&-block
+			flex-direction: column
+			align-items: center
+			justify-content: center			
+			&__item
+				transform: translateX(-24px)
+				&:nth-child(1)
+					margin-right: 0
+				&:nth-child(2)
+					transform: translateX(-23px)
+					margin-right: 0
+					order: 2
+				&:nth-child(3)
+					margin-right: 0
+					transform: translateX(-42px)
+					order: 3
+				&:nth-child(4)
+					transform: translateX(-5px)
+					order: 4
+				&:nth-child(5)
+					order: 5
+					transform: translateX(-12px)
+	

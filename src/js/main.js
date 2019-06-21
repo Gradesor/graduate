@@ -2,6 +2,7 @@ $(document).ready(function () {
 	$('.nav-menu__btn').on('click', function (e) {
 		e.preventDefault();
 		$(this).toggleClass('nav-menu__btn_active');
+		$('.nav-menu__info').toggleClass('nav-menu__info_active')
 	})
 	var button = $('.nav-item__btn');
 	var modal = $('.call');
@@ -86,4 +87,62 @@ $(document).ready(function () {
 		$(this).children('.card').children('.card__box').css('display', 'none');
 		$(this).children('.card').css('position', 'relative');
 	}); */
+	$('.slider').owlCarousel({
+		margin: 30,
+		loop: true,
+		nav: true,
+		dots: false,
+		pagination: true,
+		margin: 30,
+		responsiveClass: true,
+		navContainer: ".arrows",
+		navElement: "div",
+		navText: [''],
+		responsive: {
+			0: {
+				items: 1,
+				autoWidth: true,
+				nav: false,
+				margin: 0
+			},
+			700: {
+				items: 2,
+				autoWidth: true,
+				nav: false,
+				margin: 0
+			},
+			960: {
+				items: 3
+			}
+		}
+	})
+	$('.slider2').owlCarousel({
+		margin: 30,
+		loop: true,
+		nav: true,
+		dots: false,
+		pagination: true,
+		margin: 30,
+		responsiveClass: true,
+		navContainer: ".arrows2",
+		navElement: "div",
+		navText: [''],
+		responsive: {
+			0: {
+				items: 1,
+				autoWidth: true,
+				nav: false,
+				margin: 0
+			},
+			700: {
+				items: 2,
+				autoWidth: true,
+				nav: false,
+				margin: 0
+			},
+			960: {
+				items: 3
+			}
+		}
+	})
 });

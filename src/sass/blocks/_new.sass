@@ -1,5 +1,7 @@
 .new
 	padding-top: 48px
+	&-box
+		display: none
 	&-text
 		display: flex
 		justify-content: center
@@ -126,4 +128,27 @@
 				content: "\e900"
 				font-size: 20px
 				color: white
-
+@media (max-width: 1200px)
+	.new
+		&-cards
+			display: none
+		&-box
+			display: flex
+			justify-content: center
+@media (max-width: 751px)
+	.new
+		padding-top: 32px
+		&-text
+			&__title
+				font-size: 22px
+				margin-bottom: 33px
+				transform: translateX(-1px)
+		&-item
+			&__title
+				margin-top: 21px
+@media (max-width: 576px) and (min-width: 320px)
+	.new
+		padding-top: 35px
+		&-text
+			&__title
+				transform: translateX(-8px)

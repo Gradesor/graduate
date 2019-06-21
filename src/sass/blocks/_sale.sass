@@ -9,6 +9,8 @@
 		+bold
 		transform: translateX(-13px)
 		margin-bottom: 38px
+	&-box
+		display: none
 	&-cards
 		display: flex
 		justify-content: flex-start
@@ -105,5 +107,26 @@
 				content: "\e900"
 				font-size: 20px
 				color: white
-				
-
+@media (max-width: 1200px)
+	.sale
+		&-cards
+			display: none
+		&-box
+			display: flex
+			justify-content: center
+@media (max-width: 751px)
+	.sale
+		padding-top: 31px
+		&-cards
+			&__title
+				margin-top: 20px
+		&__title
+			transform: translateX(-1px)
+			font-size: 22px
+			margin-bottom: 34px
+@media (max-width: 576px) and (min-width: 320px)
+	.sale
+		padding-top: 17px
+		&__title
+			transform: translateX(-8px)
+			margin-bottom: 32px

@@ -9,9 +9,9 @@ input:focus
 body
 	+reg
 .container
-	width: 1170px
-	max-width: 1170px
+	max-width: 1210px
 	margin: 0 auto
+	padding: 0 20px
 	width: 100%
 .boldR
 	+boldRob
@@ -188,6 +188,72 @@ h1,h2,h3,h4
 			&__like:hover:before
 				transition: 0.2s					
 				display: flex
+@media (max-width: 1200px)
+	.arrows
+		position: relative
+	.arrows2
+		position: relative
+	.slider
+		max-width: 944px
+		margin: 0
+		margin-left: 15px
+	.slider2
+		max-width: 944px
+		margin: 0
+		margin-left: 15px
+	.owl
+		&-prev
+			position: absolute
+			top: 44%
+			z-index: 50
+			opacity: 0.6
+			left: -1.2em
+			width: 48px
+			height: 48px
+			background-color: $main_color
+			border-radius: 50%
+			background-image: url('../img/slider-chev-l.png')
+			background-repeat: no-repeat
+			background-position: 50%
+		&-next
+			position: absolute
+			z-index: 50
+			top: 44%
+			opacity: 0.6
+			right: -60em
+			width: 48px
+			height: 48px
+			background-color: $main_color
+			border-radius: 50%
+			background-image: url('../img/slider-chev-r.png')
+			background-repeat: no-repeat
+			background-position: 50%	
+		&-prev,&-next
+			&:hover
+				cursor: pointer
+@media (max-width: 960px)
+	.slider
+		max-width: 573px
+	.slider2
+		max-width: 573px
+	.owl
+		&-next
+			right: -37.9em
+@media (max-width: 640px) and (min-width: 320px)
+	.slider
+		max-width: 293px
+	.slider2
+		max-width: 293px
+	.owl
+		&-prev
+			left: 0
+		&-next
+			right: -18.2em
+@media (max-width: 576px) and (min-width: 320px)
+	.container
+		padding-left: 16px
+		padding-right: 1px
+
 
 
 				

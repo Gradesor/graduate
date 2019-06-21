@@ -153,4 +153,81 @@
 		display: inline-block
 		text-decoration: none
 		color: #393939
-			
+@media (max-width: 1200px)
+	.footer
+		margin-top: 30px
+		padding-top: 22px
+		&__box
+			display: flex
+			justify-content: center
+			border-bottom: 1px solid $main_color
+		&-block
+			max-width: 944px
+			flex-wrap: wrap
+			justify-content: center
+			border-bottom: 	none
+			&__item
+				&:nth-child(3)
+					margin-right: 14px
+				&:nth-child(4)
+					margin-top: 20px
+					& span
+						transform: translateX(0)
+@media (max-width: 960px)
+	.footer
+		&__text
+			padding-top: 25px
+			text-align: center
+		&__license
+			transform: translateX(-2px)
+			line-height: 17px
+			max-width: 191px			
+		&-block
+			max-width: 592px
+			justify-content: flex-end
+			padding-bottom: 19px
+			&__item
+				&:nth-child(1)
+					margin-right: 47px
+					transform: translateX(-6px)
+				&:nth-child(2)
+					transform: translateX(-2px)
+					margin-right: 40px
+				&:nth-child(3)
+					margin-right: 4px
+				&:nth-child(4)
+					margin-top: -8px
+					transform: translateX(-27px)
+			&__link
+				margin-bottom: 12.5px
+				transform: translateX(0)
+			&__label
+				margin-top: 12px
+			&__img
+				transform: translateX(-1px)
+			&__like
+				&:nth-child(2)
+					margin-right: 16px
+				&:nth-child(3)
+					transform: translateX(-4px)
+@media (max-width: 640px) and (min-width: 320px)
+	.footer
+		&-block
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			&__item
+				text-align: center
+				&:nth-child(1)
+					margin-right: 0
+					transform: translateX(2px)
+				&:nth-child(2)
+					margin-right: 0
+					transform: translateX(8px)
+				&:nth-child(4)
+					margin-top: 13px
+					transform: translateX(-15px)
+			&__img
+				transform: translateX(2px)
+
+		
